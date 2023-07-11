@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(Solving_Of_Linear_Systems)
+set(CMAKE_CXX_STANDARD 23)
+set(HEADERS interaction.h square_root_method.h jacobi_method.h filling.h)
+set(SOURCES interaction.cpp square_root_method.cpp jacobi_method.cpp filling.cpp main.cpp)
+add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})
